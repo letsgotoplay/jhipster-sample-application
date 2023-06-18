@@ -30,7 +30,7 @@ public class Product implements Serializable {
     private String name;
 
     @Column(name = "price")
-    private Integer price;
+    private Double price;
 
     @Column(name = "live_date")
     private Instant liveDate;
@@ -89,16 +89,16 @@ public class Product implements Serializable {
         this.name = name;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return this.price;
     }
 
-    public Product price(Integer price) {
+    public Product price(Double price) {
         this.setPrice(price);
         return this;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
