@@ -18,7 +18,7 @@ public class ProductDTO implements Serializable {
 
     private String name;
 
-    private Integer price;
+    private Double price;
 
     private Instant liveDate;
 
@@ -54,11 +54,11 @@ public class ProductDTO implements Serializable {
         this.name = name;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
