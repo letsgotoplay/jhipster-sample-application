@@ -1,15 +1,16 @@
 entity Product {
 	@Id id Long,
-	version Integer,
+	@Version version Integer,
 	productId String,
 	name String,
-	price Integer,
+	price Double,
 	liveDate Instant
 }
 
 // Set pagination options
-paginate Product with infinite-scroll
 paginate Product with pagination
+
+filter Product
 
 // Use Data Transfer Objects (DTO)
 dto * with mapstruct
